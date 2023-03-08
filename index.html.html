@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bondora Loan Application</title>
+	<style type="text/css">
+		body {
+			background-color: #ffc0cb;
+			font-family: Arial, sans-serif;
+		}
+
+		h1 {
+			color: #333333;
+			margin-bottom: 30px;
+			text-align: center;
+		}
+
+		.container {
+			margin: 0 auto;
+			max-width: 800px;
+			padding: 30px;
+			background-color: #add8e6;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+		}
+
+		label {
+			display: block;
+			margin-bottom: 10px;
+			font-weight: bold;
+			color: #333333;
+		}
+
+		input[type="text"], input[type="number"], select {
+			padding: 10px;
+			margin-bottom: 20px;
+			border-radius: 5px;
+			border: none;
+			box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+			font-size: 16px;
+			width: 100%;
+			box-sizing: border-box;
+		}
+
+		.error {
+			color: #ff0000;
+			font-size: 12px;
+			margin-top: 5px;
+		}
+
+		button[type="submit"] {
+			background-color: #4CAF50;
+			border: none;
+			color: #00008b;
+			padding: 15px;
+			font-size: 16px;
+			border-radius: 5px;
+			cursor: pointer;
+			width: 100%;
+		}
+
+		button[type="submit"]:hover {
+			background-color: #3e8e41;
+		}
+
+		.result {
+			margin-top: 30px;
+			text-align: center;
+			font-size: 24px;
+			font-weight: bold;
+			color: #333333;
+		}
+
+		.defaulter {
+			color: #ff0000;
+		}
+
+		.non-defaulter {
+			color: #008000;
+		}
+	</style>
+</head>
+<body>
+	<h1>Bondora Loan Application</h1>
+	<div class="container">
+		<form id="loan-form">
+			<label for="principal">Principal Balance</label>
+			<input type="number" id="principal" name="principal" required>
+			<span class="error" id="principal-error"></span>
+
+			<label for="interest">Interest Rate (%)</label>
+			<input type="number" id="interest" name="interest" required>
+			<span class="error" id="interest-error"></span>
+
+			<label for="age">Age</label>
+			<input type="number" id="age" name="age" required>
+			<span class="error" id="age-error"></span>
+
+			<label for="income">Total Income</label>
+			<input type="number" id="income" name="income" required>
+			<span class="error" id="income-error"></span>
+
+			<label for="duration">Loan Duration (months)</label>
+			<input type="number" id="duration" name="duration" required>
+			<span class="error" id="duration-error"></span>
+
+			<label for="employed">Employment status:</label>
+		<select id="employed" name="employed" required>
+			<option value="">Select employment status</option>
+			<option value="employed">Employed</option>
+			<option value="unemployed">Unemployed</option>
+			<option value="self-employed">Self-employed</option>
+			<option value="student">Student</option>
+			<option value="retired">Retired</option>
+		</select>
+
+                  <label for="Payment">Monthly Payment</label>
+			<input type="number" id="Payment" name="Payment" required>
+			<span class="error" id="Payment-error"></span>
+
+                  <label for="amount">Loan Amount</label>
+			<input type="number" id="amount" name="amount" required>
+			<span class="error" id="amount-error"></span> 
+
+                  <label for="loss default">Loss given Default</label>
+			<input type="number" id="loss default" name="loass default" required>
+			<span class="error" id="loss default-error"></span>  
+
+                  <label for="penalty">Interest and Penalty Balance</label>
+			<input type="number" id="penalty" name="penalty" required>
+			<span class="error" id="penalty-error"></span> 
